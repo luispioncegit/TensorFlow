@@ -3,16 +3,13 @@ library(shinyWidgets)
 library(shinydashboard)
 library(shinyjs)
 
-source("theme_diy.R")
+
 
 
 ui <- dashboardPage(
-  dashboardHeader(
-    title = logo_nord
-  ),
+  dashboardHeader(),
   dashboardSidebar(collapsed = TRUE),
   dashboardBody(
-    theme_nord,
     fluidRow(
     box(
       title = "DEUDA TOTAL", 
